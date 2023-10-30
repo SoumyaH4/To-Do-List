@@ -1,0 +1,123 @@
+*{
+  margin:0 ;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-color:#060350;   
+  /* background-color: rgb(63, 22, 53); */
+  padding:10px;
+  /* text-align: center; */
+}
+.To-Do-List{
+  width: 100%;
+  max-width: 640px;
+  background: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 100px;
+  border-radius: 10px;
+  
+}
+.To-Do-List h2{
+  color:rgb(36, 38, 148);
+   display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.To-Do-List h2 img {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom:25px;
+  padding-left: 2px; 
+  border-radius: 8px;
+  box-sizing: content-box;
+}
+ input{ 
+  background: transparent;
+  background-color: rgb(205, 206, 206);
+  color: black;
+  border: none;
+  outline: none;
+  padding: 12px;
+  flex: 1; 
+  margin: 14px;
+  border-radius: 20px;
+  font-size: 18px;
+
+ } 
+ button{
+  border-radius: 50px;
+  background-color: #2962ff;
+  width: 74px;
+  height: 38px;
+  font-size:xx-large;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+
+
+ }
+
+ul li{
+  list-style: none;
+  font-size: 22px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position:relative;
+ 
+  
+}
+ul li::before{
+  content: '';
+  position:absolute;
+  height: 24px;
+  width: 24px;
+ border-radius: 50%;
+ background-image: url(uncheckedimage.png);
+ background-size: cover ;
+ background-position:center;
+ top:11px;
+ bottom: 17px;
+ left: 14px;
+ display: flex;
+}
+ul li.lists{
+ color: #2962ff;
+ text-decoration: line-through;
+ display:flex;
+
+}
+ul li.lists::before{
+  background-image: url(check.png);
+  top: 14px;
+ }
+  ul li span{
+  position: absolute;
+  right:0;
+  top: 8px;
+  width: 28px;
+  height: 28px;
+  font-size:22px;
+  color: rgb(215, 19, 19);
+  line-height: 4opx;
+  text-align: center;
+ }
+ ul li span:hover{
+  background: rgb(205, 206, 206);
+  border-radius: 50%;
+  
+ }
+  
+  
